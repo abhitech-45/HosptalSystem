@@ -8,6 +8,12 @@ class ApiService
     {
 return axios.post(baseURL+"/api/appointment",appointmentDto)
     }
+
+    getAllAppointments()
+    {
+     return axios.get(baseURL+"/api/appointment")
+    }
+
 }
 
 export default ApiService;
