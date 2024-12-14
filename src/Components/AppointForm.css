@@ -1,0 +1,186 @@
+/* General Styles for the Form */
+.appointment_section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .appointment_section .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .heading_container h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Form Styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Submit Button */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .appointment_section .container {
+      padding: 20px;
+    }
+  
+    .form-group label {
+      font-size: 14px;
+    }
+  
+    .form-group input {
+      font-size: 14px;
+    }
+  
+    button[type="submit"] {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Navbar Styles */
+  .hero_area {
+    background-color: #333;
+    padding: 20px 0;
+  }
+  
+  .hero_bg_box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .header_section .navbar {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .header_section .navbar .navbar-brand {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .header_section .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    color: white;
+    padding: 8px 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .header_section .navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .header_section .navbar-toggler {
+    background-color: #007bff;
+  }
+  
+  .header_section .navbar-toggler span {
+    background-color: white;
+  }
+  
+  /* Footer Styles */
+  .footer_section {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+  }
+  
+  .footer_section .footer_col h4 {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .footer_section .footer_col .footer_links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .footer_section .footer_col .footer_links a:hover {
+    color: #007bff;
+  }
+  
+  .footer_section .footer_contact .contact_link_box a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .footer_section .footer_contact .contact_link_box a:hover {
+    color: #007bff;
+  }
+  
+  .footer_section .footer_social a {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer_section .footer_social a:hover {
+    color: #007bff;
+  }
+  
+  .footer_section .footer-info p {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  .footer_section .footer-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footer_section .footer-info a:hover {
+    text-decoration: underline;
+  }
+  
