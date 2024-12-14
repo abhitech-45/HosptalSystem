@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import AppointmentForm from './Components/AppointmentForm';
+import { BrowserRouter } from 'react-router-dom';
+
 
 function App() {
   return (
-   <>
-   <AppointmentForm/>
-   </>
+    <BrowserRouter>
+      <AppointmentForm></AppointmentForm>
+
+      </BrowserRouter>
   );
 }
 
