@@ -23,7 +23,7 @@ function Appointment() {
     <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "flex-start", gap: "20px" }}>
       {
         appointments.map((appointment) => (
-          <AppointmentCard key={appointment.id} appointment={appointment} />  // Use a key for each appointment card
+          <AppointmentCard key={appointment.appointmentId} appointment={appointment} />  // Use a key for each appointment card
         ))
       }
     </div>
@@ -31,3 +31,5 @@ function Appointment() {
 }
 
 export default Appointment;
+
+

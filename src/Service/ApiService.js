@@ -14,6 +14,13 @@ return axios.post(baseURL+"/api/appointment",appointmentDto)
      return axios.get(baseURL+"/api/appointment")
     }
 
+    getAppointmentsByStartTo(startTo) {
+        return axios.get(baseURL+"/api/appointment/"+startTo);
+      }
+
+     
+  
+
 }
 
 export default ApiService;
