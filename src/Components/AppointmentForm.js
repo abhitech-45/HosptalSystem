@@ -243,7 +243,7 @@ const AppointmentForm = () => {
             <div className="col-md-6 col-lg-3 footer_col">
               <h4>Links</h4>
               <div className="footer_links">
-                <a href="about.html">About</a>
+                <a href="about.html">About section</a>
                 <a href="services.html">Services</a>
                 <a href="contact.html">Contact</a>
               </div>
