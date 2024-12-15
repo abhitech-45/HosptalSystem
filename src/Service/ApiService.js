@@ -23,15 +23,20 @@ class ApiService
         return axios.get(baseURL+"/api/appointment/nurse/"+appointmentId);
 
       }
-      getExaminationRoomByAppointmentId(appointmentId)
-      {
-        return axios.get(baseURL+"/api/appointment/examinationRoom/"+appointmentId);
-
-      }
+     
       getPhysicianByAppointmentId(appointmentId)
       {
         return axios.get(baseURL+"/api/appointment/Listphysician/"+appointmentId);
 
+      }
+      getNursesByPatientId(patientId)
+      {
+        return axios.get(baseURL+"/api/patients/nursesList/"+patientId);
+
+      }
+      getPatientByAppointmentId(appointmentId)
+      {
+        return axios.get(baseURL+"/api/appointment/Listpatient/"+appointmentId);
       }
   
 
