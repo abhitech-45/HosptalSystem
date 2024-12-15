@@ -6,7 +6,7 @@ class ApiService
 
     bookAppointment(appointmentDto)
     {
-return axios.post(baseURL+"/api/appointment",appointmentDto)
+      return axios.post(baseURL+"/api/appointment",appointmentDto)
     }
 
     getAllAppointments()
