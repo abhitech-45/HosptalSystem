@@ -293,35 +293,3 @@ function FilterAppointment() {
 }
 
 export default FilterAppointment;
-
-
-
-// import { useState } from "react";
-// import AppointmentSection from "./AppointmentSection";
-// import NurseSection from "./NurseSection";
-// import PhysicianSection from "./PhysicianSection";
-// // import RoomSection from "./RoomSection";
-
-// function FilterAppointment() {
-//   const [activeTab, setActiveTab] = useState("appointments");
-
-//   return (
-//     <div>
-//       <div>
-//         {/* Tabs for navigating sections */}
-//         <button onClick={() => setActiveTab("appointments")}>Appointments</button>
-//         <button onClick={() => setActiveTab("nurse")}>Nurse</button>
-//         <button onClick={() => setActiveTab("physician")}>Physician</button>
-//         <button onClick={() => setActiveTab("room")}>Room Info</button>
-//       </div>
-
-//       {/* Render corresponding section based on the active tab */}
-//       {activeTab === "appointments" && <AppointmentSection />}
-//     {activeTab === "nurse" && <NurseSection />}
-//    {activeTab === "physician" && <PhysicianSection />}
-//     {/* //   {activeTab === "room" && <RoomSection />}   */}
-//     </div>
-//   );
-// }
-
-// export default FilterAppointment;

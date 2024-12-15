@@ -23,17 +23,35 @@ return axios.post(baseURL+"/api/appointment",appointmentDto)
         return axios.get(baseURL+"/api/appointment/nurse/"+appointmentId);
 
       }
-      getExaminationRoomByAppointmentId(appointmentId)
+     
+     
+      getPhysicianListByPatientId(patientId)
       {
-        return axios.get(baseURL+"/api/appointment/examinationRoom/"+appointmentId);
+        return axios.get(baseURL+"/api/appointment/physicianList/"+patientId);
 
       }
+     
+     
       getPhysicianByAppointmentId(appointmentId)
       {
         return axios.get(baseURL+"/api/appointment/Listphysician/"+appointmentId);
 
       }
   
+      getNursesByPatientId(patientId)
+      {
+        return axios.get(baseURL+"/api/patients/nursesList/"+patientId);
+
+      }
+
+
+      getPatientByAppointmentId(appointmentId)
+      {
+        return axios.get(baseURL+"/api/appointment/Listpatient/"+appointmentId);
+
+      }
+
+      
 
 }
 
