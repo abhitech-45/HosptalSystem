@@ -1,65 +1,16 @@
-// import { Link } from "react-router-dom";
-// import './AppointmentCard.css';
-
-// function PhysicianCard(props) {
-//   // Access the physician details directly from the props
-//   const { physicianId, name, position, ssn } = props.physician;
-
-//   return (
-//     <div className="appointment-card">
-//       <div className="appointment-card-header">
-//         <h5>Physician ID: {physicianId}</h5>
-//       </div>
-//       <div className="appointment-card-body">
-//         <p><strong>Name:</strong> {name}</p>
-//         <p><strong>Position:</strong> {position}</p>
-//         <p><strong>SSN:</strong> {ssn}</p>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default PhysicianCard;
-
-
-// import './AppointmentCard.css';
-
-// function PhysicianCard(props) {
-//   return (
-//     <div className="physician-card">
-//       <div className="physician-card-header">
-//         <h5>{props.physician.name}</h5>
-//       </div>
-//       <div className="physician-card-body">
-//         <p><strong>Position:</strong> {props.physician.position}</p>
-//         <p><strong>SSN:</strong> {props.physician.ssn}</p>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default PhysicianCard;
-
-
-import { Link } from "react-router-dom";
-import './PhysicianCard.css'; // Ensure custom styles are in the correct path
-
-function PhysicianCard(props) {
-  // Destructuring physician details from the props
-  const { physicianId, name, position, ssn } = props.physician;
-
+import React from "react";
+import "../assets/css/CardStyles.css";
+function PhysicianCard({ physician }) {
   return (
-    <div className="physician-card">
-      <div className="physician-card-header">
-        <h5>Physician ID: {physicianId}</h5>
+    <div className="card physician-card">
+      <div className="card-header">
+        <h5>Physician ID: {physician.physicianId}</h5>
       </div>
-      <div className="physician-card-body">
-        <p><strong>Name:</strong> {name}</p>
-        <p><strong>Position:</strong> {position}</p>
-        <p><strong>SSN:</strong> {ssn}</p>
+      <div className="card-body">
+        <p><strong>Name:</strong> {physician.name}</p>
+        <p><strong>Specialty:</strong> {physician.position}</p>
+        <p><strong>PhoneNo:</strong> {physician.ssn}</p>
       </div>
-      {/* Optionally, you can add an update link */}
-   
     </div>
   );
 }

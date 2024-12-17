@@ -1,13 +1,12 @@
 import React from "react";
-import "./NurseCard.css"; // Add custom styles if needed
-
+import "../assets/css/CardStyles.css";
 function NurseCard({ nurse }) {
   return (
-    <div className="nurse-card">
-      <div className="nurse-card-header">
+    <div className="card nurse-card">
+      <div className="card-header">
         <h5>Nurse ID: {nurse.nurseId}</h5>
       </div>
-      <div className="nurse-card-body">
+      <div className="card-body">
         <p><strong>Name:</strong> {nurse.nurseName}</p>
         <p><strong>Position:</strong> {nurse.positionName}</p>
       </div>
@@ -16,4 +15,3 @@ function NurseCard({ nurse }) {
 }
 
 export default NurseCard;
-

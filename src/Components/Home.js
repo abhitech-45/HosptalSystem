@@ -69,7 +69,9 @@
 import { Link, Routes, Route } from "react-router-dom";
 import Appointment from "./Appointment"; // Component to display appointment details
 import AppointmentForm from "./AppointmentForm";
-import Filterappointment from "./FilterAppointment";
+// import Filterappointment from "./FilterAppointment";
+import NurseCard from "./NurseCard";
+import PhysicianCard from "./PhysicianCard"
 // import Physician from "./Physician"; // Component for managing physicians
 // import Nurse from "./Nurse"; // Component for managing nurses
 // import Patient from "./Patient"; // Component for managing patients
@@ -93,7 +95,7 @@ function Home() {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/filterappointment">Filter Appointment</Link>
+                {/* <Link className="nav-link" to="/filterappointment">Filter Appointment</Link> */}
               </li>
 
               
@@ -115,11 +117,20 @@ function Home() {
       <Routes>
         <Route path="/appointments" element={<Appointment />} />
         <Route path="/create-appointment" element={<AppointmentForm />} />
-        <Route path="/filterappointment" element={<Filterappointment />} />
+        <Route path="/nurseData" element={<NurseCard />} />
+        
+{/* 
+        <Route path="/physician/:physicianId" element={<PhysicianCard/>} /> */}
+
+        {/* Other routes */}
+    
+
+        {/* <Route path="/filterappointment" element={<Filterappointment />} /> */}
 
         {/* <Route path="/physician" element={<Physician />} />
         <Route path="/nurse" element={<Nurse />} />
         <Route path="/patient" element={<Patient />} /> */}
+        
       </Routes>
     </div>
   );
