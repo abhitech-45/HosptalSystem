@@ -275,7 +275,7 @@ function Appointment() {
                   to="#"
                   onClick={() => handlePhysicianClick(appointment.physician)}
                 >
-                  {appointment.physician.physicianId}
+                  {appointment.physician.name}
                 </Link>
               </td>
 
@@ -293,7 +293,7 @@ function Appointment() {
                   to="#"
                   onClick={() => handleNurseClick(appointment.nurse)}
                 >
-                  {appointment.nurse.nurseId}
+                  {appointment.nurse.nurseName}
                 </Link>
               </td>
 

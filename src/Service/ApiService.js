@@ -4,6 +4,22 @@ let baseURL="http://localhost:8080"
 class ApiService
 {
 
+
+  getUnavailableSlots(date, physicianId) {
+    return axios
+      .get(`/appointments/unavailable-slots`, {
+        params: {
+          date: date,  // Date string (e.g., '2024-12-25')
+          physicianId: physicianId,  // Physician ID
+        },
+      })
+      .then((response) => response.data) // Return the list of unavailable slots
+      .catch((error) => {
+        console.error("Error fetching unavailable slots:", error);
+        throw error;
+      });
+  }
+
     bookAppointment(appointmentDto)
     {
       return axios.post(baseURL+"/api/appointment",appointmentDto)
