@@ -276,6 +276,12 @@ function Appointment() {
                   onClick={() => handlePhysicianClick(appointment.physician)}
                 >
                   {appointment.physician.name}
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> ed39860bc81b1a52067ef39b7f5b9283a95e0dcc
                 </Link>
               </td>
 
@@ -284,7 +290,10 @@ function Appointment() {
                   to="#"
                   onClick={() => handlePatientClick(appointment.patient)}
                 >
-                  {appointment.patient.patientId}
+                  {appointment.patient.patientName}
+
+        
+
                 </Link>
               </td>
 
